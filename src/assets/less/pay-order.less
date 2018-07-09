@@ -1,0 +1,94 @@
+.pay-order{
+  background-color: #a0a0a0;
+  overflow: hidden;
+  .relationship{
+    background-color: #fff;
+    padding: 20px;
+    font-size: 30px;
+    .phone{
+      margin: 16px 0;
+    }
+  }
+  .active{
+    overflow: hidden;
+    background-color: #DEDEDE;
+    padding: 20px;
+    margin: 5px 0;
+    .img, .tittle, .price{
+      float: left;
+    }
+    .img{
+      width: 150px;
+      height: 150px;
+      background-color: #42b983;
+      margin-right: 30px;
+    }
+    .tittle{
+      width: 350px;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+    }
+    .price{
+      float: right;
+      .onePrice{
+        color: red;
+        margin-bottom: 14px;
+      }
+      .count {
+        text-align: right;
+        padding-right: 20px;
+      }
+    }
+  }
+  .computed{
+    height: 40px;
+    background-color: #fff;
+    padding: 18px 20px;
+    .computedCount{
+      .reduce,.count,.plus{
+        border: 1px solid #DEDEDE;/*px*/
+        width: 44px;
+        height: 44px;
+        text-align: center;
+        line-height: 44px;
+        float: left;
+      }
+    }
+    .totalPrice{
+      float: right;
+      height: 44px;
+      line-height: 44px;
+    }
+  }
+  .pay{
+    height: 40px;
+    padding: 20px;
+    overflow: hidden;
+    background-color: #fff;
+    .payTittle{
+      float: left;
+    }
+    .icon{
+      width: 40px;
+      height: 40px;
+      float: right;
+      background: url('../images/reindeer/gou.png') no-repeat;
+      background-size: contain;
+    }
+  }
+  .btn{
+    width: 710px;
+    margin: 0 auto;
+    margin-top: 20px;
+    height: 80px;
+    background-color: #d12b1e;
+    font-size: 34px;
+    color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

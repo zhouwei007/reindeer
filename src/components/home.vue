@@ -1,6 +1,17 @@
 <template>
-  <div class="loan-apply">
-    <houseHead>申请借款</houseHead>
+  <div class="myhome">
+    <houseHead>驯鹿户外</houseHead>
+    <div class="home-item">
+      <div class="item-image"></div>
+      <div class="item-des">
+        <div class="tittle">丝绸之路</div>
+        <div class="text">共21场赛事，已有5600人报名</div>
+        <div class="btns">
+          <div class="introduce" @click="introduce()">路线介绍</div>
+          <div class="choice">赛事选择</div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 <script>
@@ -8,7 +19,7 @@ import { mapGetters } from 'vuex';
 import houseBtn from './common/house-btn.vue';
 import houseHead from './common/house-head.vue';
 export default{
-  template: '.loan-apply',
+  template: '.myhome',
   data: function () {
     return {
       errorMessage: '',
@@ -30,6 +41,9 @@ export default{
     init () {
 
     },
+    introduce() {
+      this.$router.push('/routerIntroduce');
+    }
   },
   mounted: function () {
     this.init()
@@ -37,5 +51,5 @@ export default{
 };
 </script>
 <style lang="less">
-  @import './../assets/less/loan-apply.less';
+  @import './../assets/less/myhome.less';
 </style>

@@ -1,13 +1,13 @@
 <template>
-    <div class="user-tasks">
-      <houseHead>我的申请</houseHead>
+    <div class="strategy">
+      <houseHead>攻略</houseHead>
     </div>
 </template>
 <script>
   import {mapGetters} from 'vuex';
   import houseHead from './common/house-head.vue';
   export default {
-      template: '.user-tasks',
+      template: '.strategy',
       data: function () {
           return {
               errorMessage: '',
@@ -33,5 +33,5 @@
   };
 </script>
 <style lang="less">
-    @import './../assets/less/user-tasks.less';
+    @import './../assets/less/strategy.less';
 </style>

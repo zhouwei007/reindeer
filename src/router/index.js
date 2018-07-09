@@ -1,12 +1,18 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
-import UserTasks from '@/components/user-tasks';
+import strategy from '@/components/strategy';
 import Main from '@/components/common/main-tab';
-import LoanApply from '@/components/loan-apply';
+import home from '@/components/home';
 import UserCenter from '@/components/user-center';
-
-
+import myCrowd from '@/components/myCrowd'
+import myOrder from '@/components/myOrder'
+import routerIntroduce from '@/components/router-introduce'
+import activeLists from '@/components/active-lists'
+import activeDetail from '@/components/active-detail'
+import payOrder from '@/components/pay-order'
+import orderCrowd from '@/components/orderCrowd'
+import sharePage from '@/components/sharePage'
 Vue.use(Router)
 const router =  new Router({
   routes: [
@@ -20,36 +26,66 @@ const router =  new Router({
       children: [
         {
           path: '',
-          redirect: 'loanapply'
+          redirect: 'home'
         },
-        // 申请借款
+        // 首页
         {
-          path: 'loanapply',
-          component: LoanApply,
-          name: 'loanapply'
+          path: 'home',
+          component: home,
+          name: 'home'
         },
-        // 个人中心
-        {
-          path: 'usercenter',
-          component: UserCenter,
-          name: 'usercenter'
+        {// 攻略
+          path: 'strategy',
+          component: strategy,
+          name: 'strategy'
         },
-        // 我的申请
+        // 我的众筹
         {
-          path: 'usertasks',
-          component: UserTasks,
-          name: 'usertasks'
+          path: 'myCrowd',
+          component: myCrowd,
+          name: 'myCrowd'
+        },
+        // 我的订单
+        {
+          path: 'myOrder',
+          component: myOrder,
+          name: 'myOrder'
         }
       ]
     },
+    { // 路线介绍
+      path: '/routerIntroduce',
+      name: 'routerIntroduce',
+      component: routerIntroduce
+    },
+    { // 活动列表
+      path: '/activeLists',
+      name: 'activeLists',
+      component: activeLists
+    },
+    { // 活动详情页
+      path: '/activeDetail',
+      name: 'activeDetail',
+      component: activeDetail
+    },
+    { // 自付下单
+      path: '/payOrder',
+      name: 'payOrder',
+      component: payOrder
+    },
+    // 众筹下单
     {
-      path: '/HelloWorld',
-      name: 'HelloWorld',
-      component: HelloWorld
+      path: '/orderCrowd',
+      component: orderCrowd,
+      name: 'orderCrowd'
+    },
+    {// 分享页
+      path: '/sharePage',
+      component: sharePage,
+      name: 'sharePage'
     }
   ]
 });
-console.log(router)
 export default router;
 
 router.beforeEach((to, from, next) => {// 路由跳转前

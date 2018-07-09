@@ -26,9 +26,10 @@ export default{
     return {
       title: '申请列表',
       footers: [
-        {to: 'loanapply', class: 'tab0', content: '申请借款'},
-        {to: 'usertasks', class: 'tab1', content: '我的申请'},
-        {to: 'usercenter', class: 'tab2', content: '个人中心'}
+        {to: 'home', class: 'tab0', content: '首页'},
+        {to: 'strategy', class: 'tab1', content: '攻略'},
+        {to: 'myCrowd', class: 'tab2', content: '我的众筹'},
+        {to: 'myOrder', class: 'tab3', content: '我的订单'}
       ]
     };
   },

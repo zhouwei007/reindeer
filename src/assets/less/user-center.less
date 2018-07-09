@@ -1,0 +1,77 @@
+.user-center {
+  background-color: gainsboro;
+  .logo-bg{
+    height: 358px;
+    padding: 0 55px;
+    padding-top: 42px;
+    background-color: greenyellow;
+    font-size: 24px;
+    .portrait {
+      width: 200px;
+      height: 200px;
+      border-radius: 100px;
+      background-color: blue;
+      margin: 0 auto;
+    }
+    .name {
+      color: #ffffff;
+      margin-top: 16px;
+      text-align: center;
+    }
+    .jifen{
+      color: #ffffff;
+      margin-top: 10px;
+      text-align: center;
+    }
+    .logo-footer{
+      margin-top: 24px;
+      width: 690px;
+      display: flex;
+      justify-content: center;
+      color: #fff;
+      .recommend,.qun,.gold{
+        width: 330px;
+        text-align: center;
+      }
+      .qun{
+        width: 298px;
+        border-left:1px solid #ffffff;/*px*/
+        border-right: 1px solid #ffffff;/*px*/
+      }
+    }
+  }
+  .user-content{
+    margin-top: 10px;
+    .part1 {
+      .content-item {
+        font-size: 24px;
+        height: 40px;
+        background-color: #fff;
+        padding: 20px;
+        border-top: 1px solid #333333;/*px*/
+        .item-logo,.item-text,.arrow{
+          float: left;
+        }
+        .item-logo {
+          width: 40px;
+          height: 40px;
+          background: url("../images/user-center/my-order.png") no-repeat;
+          background-size: cover;
+        }
+        .item-text{
+          height: 40px;
+          line-height: 40px;
+          margin-left: 20px;
+          color: #707070;
+        }
+        .arrow{
+          float: right;
+          width: 40px;
+          height: 40px;
+          background: url("../images/user-center/arrow_list.png") no-repeat;
+          background-size: cover;
+        }
+      }
+    }
+  }
+}
